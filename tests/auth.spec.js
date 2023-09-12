@@ -1,15 +1,13 @@
-const { test, expect } = require('@playwright/test');
+const {test, expect} = require('@playwright/test')
 
 test.describe('Authentication & Authorization', async () => {
-    test('Sign in with existing credentials', async ({ page}) => {
-        await page.goto('https://coding.pasv.us/user/login')
+  test('Sign in with existing credentials', async ({page}) => {
+    await page.goto('https://coding.pasv.us/user/login')
 
-        await page.locator('#normal_login_email').fill('veroyanko@gmail.com')
-        await page.locator('#normal_login_password').fill('Niiko4ka')
-        await page.locator('button[type="submit"]').click()
+    await page.locator('#normal_login_email').fill('veroyanko@gmail.com')
+    await page.locator('#normal_login_password').fill('Niiko4ka')
+    await page.locator('button[type="submit"]').click()
 
-      await expect(page.locator('.ant-avatar-square')).toBeVisible()
-
-
-    })
+    await expect(page.locator('.ant-avatar-square')).toBeVisible()
+  })
 })
