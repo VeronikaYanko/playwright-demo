@@ -1,0 +1,61 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"local-tests-pw1\",\n  \"version\": \"1.0.0\",\n  \"scripts\": {\n    \"test\": \" playwright test\",\n    \"test:debug\": \"playwright test --headed\",\n    \"report\": \"playwright show-report\"\n  },\n  \"author\": \"Veronika\",\n  \"license\": \"ISC\",\n  \"description\": \"Playwright end-to-end tests for localcoding.us\",\n  \"dependencies\": {\n    \"@playwright/test\": \"1.37.1\",\n    \"dotenv\": \"^16.3.1\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision 1d34784af5fbb67a6740f4dc26773613d9d49f50)
++++ b/package.json	(date 1694485352225)
+@@ -12,5 +12,8 @@
+   "dependencies": {
+     "@playwright/test": "1.37.1",
+     "dotenv": "^16.3.1"
++  },
++  "devDependencies": {
++    "prettier": "^3.0.3"
+   }
+ }
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"local-tests-pw1\",\n  \"version\": \"1.0.0\",\n  \"lockfileVersion\": 3,\n  \"requires\": true,\n  \"packages\": {\n    \"\": {\n      \"name\": \"local-tests-pw1\",\n      \"version\": \"1.0.0\",\n      \"license\": \"ISC\",\n      \"dependencies\": {\n        \"@playwright/test\": \"1.37.1\",\n        \"dotenv\": \"^16.3.1\"\n      }\n    },\n    \"node_modules/@playwright/test\": {\n      \"version\": \"1.37.1\",\n      \"resolved\": \"https://registry.npmjs.org/@playwright/test/-/test-1.37.1.tgz\",\n      \"integrity\": \"sha512-bq9zTli3vWJo8S3LwB91U0qDNQDpEXnw7knhxLM0nwDvexQAwx9tO8iKDZSqqneVq+URd/WIoz+BALMqUTgdSg==\",\n      \"dependencies\": {\n        \"@types/node\": \"*\",\n        \"playwright-core\": \"1.37.1\"\n      },\n      \"bin\": {\n        \"playwright\": \"cli.js\"\n      },\n      \"engines\": {\n        \"node\": \">=16\"\n      },\n      \"optionalDependencies\": {\n        \"fsevents\": \"2.3.2\"\n      }\n    },\n    \"node_modules/@types/node\": {\n      \"version\": \"20.5.9\",\n      \"resolved\": \"https://registry.npmjs.org/@types/node/-/node-20.5.9.tgz\",\n      \"integrity\": \"sha512-PcGNd//40kHAS3sTlzKB9C9XL4K0sTup8nbG5lC14kzEteTNuAFh9u5nA0o5TWnSG2r/JNPRXFVcHJIIeRlmqQ==\"\n    },\n    \"node_modules/dotenv\": {\n      \"version\": \"16.3.1\",\n      \"resolved\": \"https://registry.npmjs.org/dotenv/-/dotenv-16.3.1.tgz\",\n      \"integrity\": \"sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==\",\n      \"engines\": {\n        \"node\": \">=12\"\n      },\n      \"funding\": {\n        \"url\": \"https://github.com/motdotla/dotenv?sponsor=1\"\n      }\n    },\n    \"node_modules/fsevents\": {\n      \"version\": \"2.3.2\",\n      \"resolved\": \"https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz\",\n      \"integrity\": \"sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==\",\n      \"hasInstallScript\": true,\n      \"optional\": true,\n      \"os\": [\n        \"darwin\"\n      ],\n      \"engines\": {\n        \"node\": \"^8.16.0 || ^10.6.0 || >=11.0.0\"\n      }\n    },\n    \"node_modules/playwright-core\": {\n      \"version\": \"1.37.1\",\n      \"resolved\": \"https://registry.npmjs.org/playwright-core/-/playwright-core-1.37.1.tgz\",\n      \"integrity\": \"sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA==\",\n      \"bin\": {\n        \"playwright-core\": \"cli.js\"\n      },\n      \"engines\": {\n        \"node\": \">=16\"\n      }\n    }\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision 1d34784af5fbb67a6740f4dc26773613d9d49f50)
++++ b/package-lock.json	(date 1694485352233)
+@@ -11,6 +11,9 @@
+       "dependencies": {
+         "@playwright/test": "1.37.1",
+         "dotenv": "^16.3.1"
++      },
++      "devDependencies": {
++        "prettier": "^3.0.3"
+       }
+     },
+     "node_modules/@playwright/test": {
+@@ -70,6 +73,21 @@
+       "engines": {
+         "node": ">=16"
+       }
++    },
++    "node_modules/prettier": {
++      "version": "3.0.3",
++      "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.0.3.tgz",
++      "integrity": "sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==",
++      "dev": true,
++      "bin": {
++        "prettier": "bin/prettier.cjs"
++      },
++      "engines": {
++        "node": ">=14"
++      },
++      "funding": {
++        "url": "https://github.com/prettier/prettier?sponsor=1"
++      }
+     }
+   }
+ }
